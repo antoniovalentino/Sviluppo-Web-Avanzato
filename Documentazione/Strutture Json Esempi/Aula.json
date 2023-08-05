@@ -1,0 +1,14 @@
+{   
+    "id": 1,
+    "nome": "C1.16",
+    "note": "Aula per lezioni",
+    "edificio": "COPPITO2",
+    "piano": 1,
+    "zona": "Ospedale",
+    "capienza": 46,
+    "preseElettriche": 7,
+    "preseDiRete": 1,
+    "attrezzature": "PROIETTORE",
+    "areaId": 1,
+    "version": 0
+}

@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Evento",
+    "definitions": {
+        "Evento": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "dataFine": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "ricorrenza": {
+                    "$ref": "components/schemas/Ricorrenza.json"
+                }
+            },
+            "required": [
+                "dataFine",
+                "ricorrenza"
+            ],
+            "title": "EventoRicorrente"
+        }
+    }
+}

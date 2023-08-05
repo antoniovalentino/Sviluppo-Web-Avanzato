@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Edificio",
+    "definitions": {
+        "Edificio": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": "string",
+                "enum": [
+                    "COPPITO0",
+                    "COPPITO1",
+                    "COPPITO2",
+                    "ALANTURING",
+                    "LAUREE",
+                    "BLOCCOA",
+                    "BLOCCOB",
+                    "BLOCCOC"
+                ],
+                "title": "Edificio"
+            }
+        }
+    }
+}

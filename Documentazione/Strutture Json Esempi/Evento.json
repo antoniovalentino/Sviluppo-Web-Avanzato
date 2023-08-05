@@ -1,0 +1,14 @@
+{
+    "id": 1,
+    "nome": "Esame di Fondamenti",
+    "descrizione": "Esame del corso di Fondamenti di Informatica",
+    "data": "2023-07-06",
+    "oraInizio": "16:00:00",
+    "oraFine": "17:30:00",
+    "tipologiaEvento": "Esame",
+    "personaId": 2,
+    "aulaId": 1,
+    "corsoId": 1,
+    "eventoRicorrentId": 0,
+    "version": 0
+}

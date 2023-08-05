@@ -1,0 +1,63 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Aula",
+    "definitions": {
+        "Aula": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "nome": {
+                    "type": "string"
+                },
+                "note": {
+                    "type": "string"
+                },
+                "edificio": {
+                    "$ref": "Edificio.json"
+                },
+                "piano": {
+                    "type": "integer"
+                },
+                "zona": {
+                    "type": "string"
+                },
+                "capienza": {
+                    "type": "integer"
+                },
+                "preseElettriche": {
+                    "type": "integer"
+                },
+                "preseDiRete": {
+                    "type": "integer"
+                },
+                "attrezzature": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "Attrezzatura.json"
+                    }
+                },
+                "area": {
+                    "$ref": "Area.json"
+                },
+                "version": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "nome", 
+                "edificio",
+                "piano",
+                "zona",
+                "capienza",
+                "preseElettriche",
+                "preseDiRete",
+                "attrezzature",
+                "area"
+            ],
+            "title": "Aula"
+        }
+    }
+}

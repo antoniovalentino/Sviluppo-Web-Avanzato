@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Attrezzatura",
+    "definitions": {
+        "Attrezzatura": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": "string",
+                "enum": [
+                    "PROIETTORE",
+                    "SCHERMOMOTORIZZATO",
+                    "SCHERMOMANUALE",
+                    "IMPIANTOAUDIO",
+                    "PCFISSO",
+                    "MICROFONOAFILO",
+                    "MICROFONOSENZAFILO",
+                    "LAVAGNALUMINOSA",
+                    "WIFI"
+                ],
+                "title": "Attrezzatura"
+            }
+        }
+    }
+}

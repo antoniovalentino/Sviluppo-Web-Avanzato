@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Area",
+    "definitions": {
+        "Area": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "nome": {
+                    "type": "string"
+                },
+                "descrizione": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "nome",
+                "descrizione"
+            ],
+            "title": "Area"
+        }
+    }
+}

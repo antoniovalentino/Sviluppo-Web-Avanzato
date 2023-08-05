@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/TipologiaEvento",
+    "definitions": {
+        "TipologiaEvento": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": "string",
+                "enum": [
+                    "LEZIONE",
+                    "ESERCITAZIONE",
+                    "ESAME",
+                    "PARZIALE",
+                    "LAUREE",
+                    "SEMINARIO",
+                    "CONFERENZA",
+                    "RIUNIONE",
+                    "CDC",
+                    "CAD",
+                    "CERIMONIA",
+                    "ELEZIONI",
+                    "DIPARTIMENTO",
+                    "ATENEO",
+                    "ESTERNO",
+                    "MANUTENZIONE",
+                    "STUDIOINDIVIDUALE",
+                    "ALTRO"
+                ],
+                "title": "TipologiaEvento"
+            }
+        }
+    }
+}

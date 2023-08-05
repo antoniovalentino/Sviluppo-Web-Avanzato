@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Amministratore",
+    "definitions": {
+        "Amministratore": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "username": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string",
+                    "format": "password"
+                }
+            },
+            "required": [
+                "password",
+                "username"
+            ],
+            "title": "Amministratore"
+        }
+    }
+}

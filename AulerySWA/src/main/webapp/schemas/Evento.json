@@ -1,0 +1,57 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Evento",
+    "definitions": {
+        "Evento": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "nome": {
+                    "type": "string"
+                },
+                "descrizione": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "oraInizio": {
+                    "type": "string",
+                    "format": "time"
+                },
+                "oraFine": {
+                    "type": "string",
+                    "format": "time"
+                },
+                "tipologiaEvento": {
+                    "$ref": "components/schemas/TipologiaEvento.json"
+                },
+                "persona": {
+                    "$ref": "components/schemas/Persona.json"
+                },
+                "aula": {
+                    "$ref": "components/schemas/Aula.json"
+                },
+                "corso": {
+                    "$ref": "components/schemas/Corso.json"
+                },
+                "eventoRicorrente": {
+                    "$ref": "components/schemas/EventoRicorrente.json"
+                }
+            },
+            "required": [
+                "nome",
+                "data",
+                "oraInizio",
+                "oraFine",
+                "tipologiaEvento", 
+                "persona", 
+                "aula", 
+                "corso",
+                "eventoRicorrente"
+            ],
+            "title": "Evento"
+        }
+    }
+}

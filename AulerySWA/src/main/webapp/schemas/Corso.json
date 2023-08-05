@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Corso",
+    "definitions": {
+        "Corso": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "nome": {
+                    "type": "string"
+                },
+                "area": {
+                    "$ref": "Area.json"
+                }
+            },
+            "required": [
+                "nome", 
+                "area"
+            ],
+            "title": "Corso"
+        }
+    }
+}
